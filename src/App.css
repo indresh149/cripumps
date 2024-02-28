@@ -1,38 +1,143 @@
-.App {
+/* Center the logo */
+.center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style the logo */
+.logo {
+  width: 300px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style the middle container */
+.middle-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
-.App-link {
-  color: #61dafb;
+/* Style the award image */
+.Award {
+  width: 300px; /* Adjust the width as needed */
+  height: 550px; /* Maintain aspect ratio */
+  margin-left: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Award-Ceremony {
+  width: 600px; /* Adjust the width as needed */
+  height: 350px; /* Maintain aspect ratio */
+ 
+
+}
+
+/* Style the right side content */
+.right-side {
+  flex: 1; /* Take remaining space */
+  margin-left: 20px; /* Adjust spacing as needed */
+}
+
+.list-container {
+  width: 700px;
+}
+
+.normal-text {
+  font-weight: bold;
+  font-size: 12px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+}
+
+.card-container {
+  width: 700px;
+}
+.installed-text{
+  font-weight: 'bold';
+  margin-left: 160px;
+}
+
+.below-text {
+  font-weight: 'bold';
+  margin-left: 460px;
+
+}
+
+.hrr {
+  margin-left: 160px;
+  margin-right: 160px;
+
+}
+
+.footer-text{
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 560px;
+  margin-right: 360px;
+
+}
+
+.footer-types{
+  font-size: small;
+  margin-left: 160px;
+  margin-right: 160px;
+
+
+}
+
+.footer-types2{
+  font-size: small;
+  margin-left: 420px;
+  margin-right: 160px;
+
+}
+
+.Motors {
+  width: 960px; /* Adjust the width as needed */
+  height: 450px; /* Maintain aspect ratio */
+  margin-left: 300px;
+
+}
+
+.footer-box {
+  background-color: #ec2d2d;
+  padding: 20px;
+  text-align: center;
+  height: 100px;
+}
+
+.footer-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-item:last-child {
+  margin-right: 0;
+}
+
+.iconn {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer-item{
+  gap: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fb-container {
+  gap: 10px;
+  margin-right: 10px;
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .middle-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .right-side {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-top: 20px; /* Add top margin for separation */
   }
 }
